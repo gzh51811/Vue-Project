@@ -13,13 +13,10 @@ const routes = [
     {name:'List', path:'/list',component:List},
     {name:'Cart', path:'/cart',component:Cart},
     {name:'Home', path:'/',component:Home}
-    
-
 ]
 
 
 let router = new VueRouter({
     routes
-
 });
 export default router;
