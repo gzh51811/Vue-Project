@@ -1,6 +1,6 @@
 <template >
     <ul class="dv1" >
-        <li v-for="(type,idx) in typeList" :key="idx" @click="isClick(idx)" :class="{'isactive':active==idx}">
+        <li v-for="(type,idx) in typeList" :key="idx" @click="isClick(type.name,idx)" :class="{'isactive':active==idx}">
             <span>{{type.name}}</span>
         </li>
     </ul>
@@ -39,9 +39,9 @@ export default {
         }
     },
     methods:{
-        isClick(idx){
+        isClick(names,idx){
             this.active=idx;
-            this.$store.commit('changeLeixing',idx)
+            this.$store.commit('changeLeixing',names)
         }
     }
 
@@ -60,7 +60,7 @@ export default {
 </script>
 <style lang="scss" scope >
     .dv1{
-        height: 35.3125rem;
+        height:31.75rem;
         overflow: auto;
         list-style: none;
         width: 25%;

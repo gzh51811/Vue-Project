@@ -23,6 +23,6 @@ export default {
             zoom: 1;
             margin: 0 auto;
             overflow: hidden;
-            margin-top:2.723625rem;
+            margin-top:6.125rem;
     }
 </style>

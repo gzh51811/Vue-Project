@@ -19,6 +19,7 @@ Vue.use(Vuex);
 const store = new Store({
     // 公共数据
     state:{
+        buwei:['热门类目'],
         leixing:[
             {
                 "icon": "https://p4.maiyaole.com/img/category/201710/1507438025375.png?35491",
@@ -71,10 +72,13 @@ const store = new Store({
             }
         ],
 
-    }
-    // mutations:{
-       
-    // }
+    },
+     mutations:{
+        changeLeixing(data,payload){
+            data.buwei.splice(0,1,payload)
+            console.log(data.buwei)
+        }
+     }
         
 });
 
