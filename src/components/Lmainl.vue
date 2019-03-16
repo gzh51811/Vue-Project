@@ -41,6 +41,7 @@ export default {
     methods:{
         isClick(idx){
             this.active=idx;
+            this.$store.commit('changeLeixing',idx)
         }
     }
 

@@ -1,11 +1,19 @@
 <template >
     <div class="dv3" >
-        右边
+        {{name}}
     </div>
 </template>
 <script>
 export default {
-    
+    data(){
+        return {
+            name:''
+        }
+    },
+   mounted(){
+      this.name=this.$store.state.leixing
+      console.log(this.name)
+    }
 }
 </script>
 <style lang="scss" scope >

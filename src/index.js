@@ -2,7 +2,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 
-// import store from './store'//引入VueX
+ import store from './store'//引入VueX
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
@@ -16,9 +16,9 @@ new Vue({
     render(create){
         return create(App);
     },
-    router
+    router,
 
     // 将创建好的store注入到Vue根实例里
-    // store,
+    store
    
 });
