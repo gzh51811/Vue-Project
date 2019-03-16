@@ -18,7 +18,7 @@ export default {
     },
    mounted(){
       this.name=this.$store.state.leixing
-      console.log(this.name)
+      
     }
 }
 </script>

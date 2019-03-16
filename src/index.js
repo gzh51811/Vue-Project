@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import router from './router';
 import axios from 'axios'
-// import store from './store'//引入VueX
+
 import VUeResource from 'vue-resource';
 Vue.prototype.$axios=axios;
-
+import store from './store'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
@@ -18,6 +18,7 @@ new Vue({
         return create('router-view');
     },
     router,
+    store
 
     
    
