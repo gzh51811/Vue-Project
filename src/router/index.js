@@ -16,6 +16,12 @@ import Mine from '../pages/Mine.vue';
 
 
 const routes = [
+    // {name:'Home', path:'/home',component:Home},
+    // {name:'List', path:'/list',component:List },
+    // {name:'Cart', path:'/cart',component:Cart},
+    // {name:'Mine', path:'/mine',component:Mine},
+    // {name:'Home', path:'/',component:Home}
+
     //第一层路由
      {name:'Content', path:'/content',component:Content},
      {name:'App', path:'/',component:App,children:[
@@ -26,12 +32,6 @@ const routes = [
        {name:'Mine', path:'mine',component:Mine},
        {name:'Home', path:'',component:Home}
     ]}
-     
-    
-
-    
-   
-
 ]
 
 
