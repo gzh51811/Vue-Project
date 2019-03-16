@@ -19,15 +19,62 @@ Vue.use(Vuex);
 const store = new Store({
     // 公共数据
     state:{
-        leixing:[]
-    },
-    mutations:{
-        changeLeixing(state,payload){
-         
-            state.leixing.push(payload)
-            console.log(state.leixing)
-        }
+        leixing:[
+            {
+                "icon": "https://p4.maiyaole.com/img/category/201710/1507438025375.png?35491",
+                "id": 1001467,
+                "name": "感冒"
+            }, {
+                "icon": "https://p1.maiyaole.com/img/category/201710/1507438667650.png?58659",
+                "id": 1001468,
+                "name": "哮喘"
+            }, {
+                "icon": "https://p1.maiyaole.com/img/category/201710/1507439200335.png?29757",
+                "id": 1001469,
+                "name": "慢性咽炎"
+            }, {
+                "icon": "https://p3.maiyaole.com/img/category/201710/1507444079339.png?5668",
+                "id": 1001476,
+                "name": "宝宝腹泻"
+            }, {
+                "icon": "https://p2.maiyaole.com/img/category/201710/1507443307062.png?36365",
+                "id": 1001451,
+                "name": "急性肠炎"
+            }, {
+                "icon": "https://p4.maiyaole.com/img/category/201803/1521446356089.png?69135",
+                "id": 1001470,
+                "name": "皮肤瘙痒"
+            }, {
+                "icon": "https://p1.maiyaole.com/img/category/201710/1507441370559.png?77632",
+                "id": 1001471,
+                "name": "便秘"
+            }, {
+                "icon": "https://p4.maiyaole.com/img/category/201708/1502183291108.png?69049",
+                "id": 1001464,
+                "name": "过敏性鼻炎"
+            }, {
+                "icon": "https://p4.maiyaole.com/img/category/201710/1507445077743.png?28936",
+                "id": 1001477,
+                "name": "脑梗塞"
+            }, {
+                "icon": "https://p2.maiyaole.com/img/category/201710/1507442035652.png?85450",
+                "id": 1001472,
+                "name": "口腔溃疡"
+            }, {
+                "icon": "https://p2.maiyaole.com/img/category/201708/1502188411957.png?26162",
+                "id": 1001462,
+                "name": "结膜炎"
+            }, {
+                "icon": "https://p4.maiyaole.com/img/category/201710/1507442439170.png?2742",
+                "id": 1001473,
+                "name": "脱发"
+            }
+        ],
+
     }
+    // mutations:{
+       
+    // }
         
 });
 

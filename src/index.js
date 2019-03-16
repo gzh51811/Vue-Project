@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import App from './App';
 import router from './router';
 
  import store from './store'//引入VueX
@@ -14,7 +13,7 @@ new Vue({
     el:'#app',
     // template:'<App/>'
     render(create){
-        return create(App);
+        return create('router-view');
     },
     router,
 

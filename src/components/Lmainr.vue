@@ -1,6 +1,7 @@
 <template >
     <div class="dv3" >
         {{name}}
+        <button @click='jump()'>跳详情页</button>
     </div>
 </template>
 <script>
@@ -8,6 +9,11 @@ export default {
     data(){
         return {
             name:''
+        }
+    },
+    methods:{
+        jump(){
+            this.$router.push('/content')
         }
     },
    mounted(){
