@@ -1,10 +1,10 @@
 <template>
     <div>
         <h3 class="lei">
-           {{names[0]}}
+           {{names}}
         </h3>
         <ul>
-            <li v-for="item in dataList " :key="item.id" class='lei_1'>
+            <li v-for="item in dataList " :key="item.id" class='lei_1' @click="goto(item.name)">
                 <img :src="item.icon"/>
                 <span>{{item.name}}</span>
             </li>
@@ -13,13 +13,29 @@
 </template>
 <script>
 export default {
-    data(){
-        return {
-            dataList:this.$store.state.leixing,
-            names:this.$store.state.buwei
+    computed:{
+        dataList(){
+            if(this.names=='热门类目'){
+                return this.$store.state.leixing
+            }else if(this.names=='男科用药') {
+                return this.$store.state.nanke
+            }
+            else {
+                return this.$store.state.shenjing
+            }
+        },
+        names(){
+            return(
+                this.$store.state.buwei[0]
+            )
+            
         }
-        
-    }
+    },
+    methods:{
+        goto(name){
+             this.$router.push({name:'Content',params:{name}})
+        }
+    }    
 }
 </script>
 <style lang="scss" scope>

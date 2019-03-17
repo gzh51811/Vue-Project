@@ -71,6 +71,59 @@ const store = new Store({
                 "name": "脱发"
             }
         ],
+        nanke:[
+            {icon: "https://p3.maiyaole.com/img/category/201707/1499406720493.png?6605",
+            id: 1001278,
+            name: "阳痿&早泄"
+            },
+            {icon: "https://p3.maiyaole.com/img/category/201707/1499406727381.png?71744",
+            id: 1001279,
+            name: "前列腺炎"
+            },
+            {icon: "https://p1.maiyaole.com/img/category/201707/1499406749817.png?41657",
+            id: 1001282,
+            name: "肾病"
+            },
+            {icon: "https://p2.maiyaole.com/img/category/201707/1499406777035.png?37084",
+            id: 1001283,
+            name: "补肾"
+            },
+            {icon: "https://p1.maiyaole.com/img/category/201707/1499406743332.png?22409",
+            id: 1001281,
+            name: "泌尿系统疾病"
+            },
+            {icon: "https://p2.maiyaole.com/img/category/201707/1499406735806.png?3013",
+            id: 1001280,
+            name: "男性不育症"
+            }
+        ],
+        shenjing:[
+            {icon: "https://p3.maiyaole.com/img/category/201707/1499406939759.png?40250",
+            id: 1001289,
+            name: "帕金森"
+            },
+            {icon: "https://p4.maiyaole.com/img/category/201707/1499406934561.png?47576",
+            id: 1001288,
+            name: "精神分裂症"
+            },
+            {icon: "https://p1.maiyaole.com/img/category/201707/1499406929133.png?10914",
+            id: 1001287,
+            name: "癫痫"
+            },
+            {icon: "https://p3.maiyaole.com/img/category/201707/1499406923747.png?57616",
+            id: 1001286,
+            name: "抑郁症"
+            },
+            {icon: "https://p4.maiyaole.com/img/category/201707/1499407010962.png?188",
+            id: 1001297,
+            name: "运动神经元病"
+            },
+            {icon: "https://p2.maiyaole.com/img/category/201707/1499406978721.png?38938",
+            id: 1001293,
+            name: "神经性疼痛"
+            }
+
+        ]
 
     },
      mutations:{
