@@ -7,46 +7,39 @@
   </mt-swipe>
 </template>
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 export default {
     data(){
       return {
         goodlist:[]
       }
     },
-    // methods:{
-    //   async getCommend(){
-    //     let {
-    //       data:{
-    //         data:{goods}
-    //       } 
-    //     } = await this.$axiso('http://localhost:3000/setting/Swipe',{
-    //       params:{
-    //         banner
-    //       }
-    //     });
-    //      console.log(this.goodlist);
-    //   }
-    // },
     created() {
       // debugger
       this.$axios.get('http://localhost:3000/setting/Swipe', {
         params: {
 
         }
-      }).then(function (response) {
+      }).then( (response) =>{
+
       // console.log(response.data[1].data.banner);
-      let goodlist = response.data[1].data.banner;
-      console.log(goodlist[0].pic)
+        this.goodlist = response.data[1].data.banner;
+      // console.log(this.goodlist);
+      // let list = goodlist[0]
+      
     })
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .mint-swipe{
-        height: 12.5rem !important;
+        height: 9.375rem !important;
         .mint-swipe-item{
-            background: rgb(233, 138, 138);
+            // background: rgb(233, 138, 138);
+            img{
+              width: 100%;
+              height: 9.375rem;
+            }
         }
         
     }
