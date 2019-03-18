@@ -23,21 +23,21 @@
             navs:[
               {
                 title:'首页',
-                path:'/home',
+                path:'home',
                 imgurl:'assets/img/1.png'
               },{
                 title:'找药',
-                path:'/list',
+                path:'list',
                 imgurl:'assets/img/2.png'
 
               },{
                 title:'购物车',
-                path:'/cart',
+                path:'cart',
                 imgurl:'assets/img/3.png'
 
               },{
                 title:'我的',
-                path:'/mine',
+                path:'mine',
                 imgurl:'assets/img/4.png'
 
               }

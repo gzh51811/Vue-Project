@@ -19,15 +19,119 @@ Vue.use(Vuex);
 const store = new Store({
     // 公共数据
     state:{
-        leixing:[]
+        buwei:['热门类目'],
+        leixing:[
+            {
+                "icon": "https://p4.maiyaole.com/img/category/201710/1507438025375.png?35491",
+                "id": 1001467,
+                "name": "感冒"
+            }, {
+                "icon": "https://p1.maiyaole.com/img/category/201710/1507438667650.png?58659",
+                "id": 1001468,
+                "name": "哮喘"
+            }, {
+                "icon": "https://p1.maiyaole.com/img/category/201710/1507439200335.png?29757",
+                "id": 1001469,
+                "name": "慢性咽炎"
+            }, {
+                "icon": "https://p3.maiyaole.com/img/category/201710/1507444079339.png?5668",
+                "id": 1001476,
+                "name": "宝宝腹泻"
+            }, {
+                "icon": "https://p2.maiyaole.com/img/category/201710/1507443307062.png?36365",
+                "id": 1001451,
+                "name": "急性肠炎"
+            }, {
+                "icon": "https://p4.maiyaole.com/img/category/201803/1521446356089.png?69135",
+                "id": 1001470,
+                "name": "皮肤瘙痒"
+            }, {
+                "icon": "https://p1.maiyaole.com/img/category/201710/1507441370559.png?77632",
+                "id": 1001471,
+                "name": "便秘"
+            }, {
+                "icon": "https://p4.maiyaole.com/img/category/201708/1502183291108.png?69049",
+                "id": 1001464,
+                "name": "过敏性鼻炎"
+            }, {
+                "icon": "https://p4.maiyaole.com/img/category/201710/1507445077743.png?28936",
+                "id": 1001477,
+                "name": "脑梗塞"
+            }, {
+                "icon": "https://p2.maiyaole.com/img/category/201710/1507442035652.png?85450",
+                "id": 1001472,
+                "name": "口腔溃疡"
+            }, {
+                "icon": "https://p2.maiyaole.com/img/category/201708/1502188411957.png?26162",
+                "id": 1001462,
+                "name": "结膜炎"
+            }, {
+                "icon": "https://p4.maiyaole.com/img/category/201710/1507442439170.png?2742",
+                "id": 1001473,
+                "name": "脱发"
+            }
+        ],
+        nanke:[
+            {icon: "https://p3.maiyaole.com/img/category/201707/1499406720493.png?6605",
+            id: 1001278,
+            name: "阳痿&早泄"
+            },
+            {icon: "https://p3.maiyaole.com/img/category/201707/1499406727381.png?71744",
+            id: 1001279,
+            name: "前列腺炎"
+            },
+            {icon: "https://p1.maiyaole.com/img/category/201707/1499406749817.png?41657",
+            id: 1001282,
+            name: "肾病"
+            },
+            {icon: "https://p2.maiyaole.com/img/category/201707/1499406777035.png?37084",
+            id: 1001283,
+            name: "补肾"
+            },
+            {icon: "https://p1.maiyaole.com/img/category/201707/1499406743332.png?22409",
+            id: 1001281,
+            name: "泌尿系统疾病"
+            },
+            {icon: "https://p2.maiyaole.com/img/category/201707/1499406735806.png?3013",
+            id: 1001280,
+            name: "男性不育症"
+            }
+        ],
+        shenjing:[
+            {icon: "https://p3.maiyaole.com/img/category/201707/1499406939759.png?40250",
+            id: 1001289,
+            name: "帕金森"
+            },
+            {icon: "https://p4.maiyaole.com/img/category/201707/1499406934561.png?47576",
+            id: 1001288,
+            name: "精神分裂症"
+            },
+            {icon: "https://p1.maiyaole.com/img/category/201707/1499406929133.png?10914",
+            id: 1001287,
+            name: "癫痫"
+            },
+            {icon: "https://p3.maiyaole.com/img/category/201707/1499406923747.png?57616",
+            id: 1001286,
+            name: "抑郁症"
+            },
+            {icon: "https://p4.maiyaole.com/img/category/201707/1499407010962.png?188",
+            id: 1001297,
+            name: "运动神经元病"
+            },
+            {icon: "https://p2.maiyaole.com/img/category/201707/1499406978721.png?38938",
+            id: 1001293,
+            name: "神经性疼痛"
+            }
+
+        ]
+
     },
-    mutations:{
-        changeLeixing(state,payload){
-         
-            state.leixing.push(payload)
-            console.log(state.leixing)
+     mutations:{
+        changeLeixing(data,payload){
+            data.buwei.splice(0,1,payload)
+            console.log(data.buwei)
         }
-    }
+     }
         
 });
 
