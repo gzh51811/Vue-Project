@@ -33,7 +33,9 @@ export default {
     },
     methods:{
         goto(name){
-             this.$router.push({name:'Content',params:{name}})
+             this.$router.push({path:'/content',query:{name}})//通过query传参过去
+            //this.$router.push({name:'Content',params:{name}})//通过params传参过去,那边刷新参数就没了
+
         }
     }    
 }

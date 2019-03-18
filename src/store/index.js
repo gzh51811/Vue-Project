@@ -123,6 +123,57 @@ const store = new Store({
             name: "神经性疼痛"
             }
 
+        ],
+        ganmao:[
+            {
+                img:"https://p4.maiyaole.com/img/item/201808/10/200_20180810095613128.jpg",
+                names:"三九/999 感冒灵颗粒 10g*9袋 感冒发烧 ",
+                price: 12.3,
+                userGrade: 16561 //好评数
+            },
+             {
+                img: "https://p1.maiyaole.com/img/item/201811/09/200_2018110917355088.jpg",
+                names: "白云山 板蓝根颗粒 10g*20包 感冒发烧",
+                price: 13.8,
+                userGrade: 1866 //好评数
+            },{
+                img: "https://p1.maiyaole.com/img/item/201901/09/200_20190109133615576.jpg",
+                names: "达菲 磷酸奥司他韦胶囊 75mg*10粒 甲型流感 乙型流感 病毒性感冒发烧",
+                price: 248,
+                userGrade: 16544 //好评数
+            },
+             {
+                img: "https://p4.maiyaole.com/img/item/201808/10/200_20180810102144196.jpg",
+                names: "同贝/tonpe 小儿豉翘清热颗粒 2g*6袋",
+                price: 25.7,
+                userGrade: 1355 //好评数
+            }
+        ],
+        xiaoquang:[
+            {
+                img: "https://p2.maiyaole.com/img/item/201612/08/200_2016120813201692.jpg",
+                names:"阿斯利康 信必可都保 布地奈德福莫特罗粉吸入剂 160μg:4.5μg*60吸",
+                price: 235.2,
+                userGrade: 16561 //好评数
+            },
+             {
+                img: "https://p4.maiyaole.com/img/item/201808/10/200_20180810095423827.jpg",
+                names:  "舒利迭 沙美特罗替卡松粉吸入剂 50μg:250μg*60吸",
+                price: 163.8,
+                userGrade: 1866 //好评数
+            },{
+                img: "https://p4.maiyaole.com/img/item/201808/10/200_20180810100029283.jpg",
+                
+                names: "顺尔宁 孟鲁司特钠咀嚼片 4mg*5片",
+                price: 218,
+                userGrade: 16544 //好评数
+            },
+             {
+                img: "https://p3.maiyaole.com/img/item/201808/10/200_20180810095511400.jpg",
+                names: "阿斯利康 普米克令舒 吸入用布地奈德混悬液 2ml:1mg*5支 ",
+                price: 95.7,
+                userGrade: 1355 //好评数
+            }
         ]
 
     },
