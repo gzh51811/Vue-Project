@@ -10,26 +10,22 @@ const {
     del
 } = require("../libs/mongo.js");
 /* GET users listing. */
-router.get('/', function (req, res, next) {
-    res.send('respond with a resource');
-});
+// router.get('/', function (req, res, next) {
+//     res.send('respond with a resource');
+// });
 
 // 查询
 router.get('/Swipe', async (req, res, next) => {
     let {author} = req.query
-    let data = await find(`list`, author ? {
-        author
-    } : {})
+    let data = await find(`list`, author ? {author} : {})
     res.send(data);
-    // res.send(123);
+
 });
 // 查（登录）
 router.post('/RouterLogin',bodyParser.urlencoded({ extended: false }), async (req, res, next) => {
     let {name,password} = req.body
     password = isNaN(password) ? password : password*1;
-    let data = await find(`user`, name ? {
-        name
-    } : {})
+    let data = await find(`user`, name ? {name} : {})
     if(data[0].password==password){
         res.send({
             status:1,
@@ -72,7 +68,6 @@ router.get('/billUpdate', async (req, res, next) => {
         pay: val4,
         time: val5
     });
-
 });
 // 删
 router.get('/updata', async (req, res, next) => {
@@ -85,4 +80,22 @@ router.get('/updata', async (req, res, next) => {
 router.post('/autoLogin', async (req, res, next) =>{
     res.send(token.checkToken(req.headers.token)); 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 module.exports = router

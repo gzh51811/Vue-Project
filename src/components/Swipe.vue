@@ -18,11 +18,10 @@ export default {
       // debugger
       this.$axios.get('http://localhost:3000/setting/Swipe', {
         params: {
-
         }
       }).then( (response) =>{
 
-      // console.log(response.data[1].data.banner);
+      //  console.log(response.author);
         this.goodlist = response.data[1].data.banner;
       // console.log(this.goodlist);
       // let list = goodlist[0]

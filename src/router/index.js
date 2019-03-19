@@ -28,12 +28,12 @@ const routes = [
         {name:'Content', path:'/content',component:Content},//列表页路由
         {name:'App', path:'/',component:App,children:[
             //第二层路由
-        {name:'Home', path:'home',component:Home},
-        {name:'List', path:'list',component:List },
-        {name:'Cart', path:'cart',component:Cart},
-        {name:'Mine', path:'mine',component:Mine},
-        {name:'Home', path:'',component:Home}
-        ]}
+            {name:'Home', path:'home',component:Home},
+            {name:'List', path:'list',component:List },
+            {name:'Cart', path:'cart',component:Cart},
+            {name:'Mine', path:'mine',component:Mine},
+            {name:'Home', path:'',component:Home}
+            ]}
     ]
 
 

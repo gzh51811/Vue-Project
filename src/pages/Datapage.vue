@@ -3,8 +3,17 @@
 </template>
 <script>
 export default {
-    created(){
-        console.log(this.$router)
+    created() {
+      // debugger
+      this.$axios.get('http://localhost:3000/setting/Swipe', {
+        params: {
+        }
+      }).then( (response) =>{
+          console.log(666)
+      
+      
+        })
     }
+    
 }
 </script>
