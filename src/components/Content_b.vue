@@ -1,6 +1,8 @@
 <template>
 <div>
-    <div class="goodslist" v-for="(it,idx) in goodsList" :key="idx" @click="todatalists(it.names)">
+    <div class="goodslist" v-for="(it,idx) in goodsList" :key="idx"
+     @click="todatalists(it.names,it.img,it.price,it.userGrade)"
+     >
         <div class="pic"><img :src="it.img" width='10px'/></div>
         <div class="gright">
            <h2 class="goods_name"><i class="yin"></i>{{it.names}}</h2>
@@ -32,8 +34,8 @@ export default {
         }
     },
     methods:{
-        todatalists(keyword){
-            this.$router.push({path:'/datalists',query:{keyword}})
+        todatalists(name,imgurl,price,haoping){
+            this.$router.push({path:'/datalists',query:{name,imgurl,price,haoping}})
         }
     }
     

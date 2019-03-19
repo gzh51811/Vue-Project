@@ -180,7 +180,7 @@ const store = new Store({
      mutations:{
         changeLeixing(data,payload){
             data.buwei.splice(0,1,payload)
-            console.log(data.buwei)
+            // console.log(data.buwei)
         }
      }
         

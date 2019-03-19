@@ -7,7 +7,7 @@
                 <i><img src="../assets/img/0.png" class="fang"/></i> 
                 <input  type="seach"  placeholder="搜索" class="search_box_input">
             </div>
-            <i class="carts"><img src="../assets/img/cart.png"/></i>
+            <i class="carts" @click="gotocart"><img src="../assets/img/cart.png"/></i>
         </div>
         <ul class="ganmao">
             <li>感冒</li>
@@ -31,6 +31,11 @@ import Contentb from '../components/Content_b.vue'
   export default {
     components:{
         Contentb
+    },
+    methods:{
+        gotocart(){
+             this.$router.push({name:'Cart'})
+        }
     }
   }
 </script>
