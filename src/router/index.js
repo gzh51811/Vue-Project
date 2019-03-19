@@ -11,33 +11,29 @@ import Home from '../pages/Home.vue';
 import List from '../pages/List.vue';
 import Cart from '../pages/Cart.vue';
 import Mine from '../pages/Mine.vue';
-import Datalists from '../pages/Datapage.vue'
-
-
+import Datalists from '../pages/Datapage.vue';
 
 
 const routes = [
-    // {name:'Home', path:'/home',component:Home},
-    // {name:'List', path:'/list',component:List },
-    // {name:'Cart', path:'/cart',component:Cart},
-    // {name:'Mine', path:'/mine',component:Mine},
-    // {name:'Home', path:'/',component:Home}
+    
+    {name:'Datalists', path:'/datalists',component:Datalists},
+    {name:'Content', path:'/content',component:Content},
+    {name:'App', path:'/',component:App,children:[
 
-    //第一层路由
-        {name:'Datalists', path:'/datalists',component:Datalists},
-        {name:'Content', path:'/content',component:Content},//列表页路由
-        {name:'App', path:'/',component:App,children:[
-            //第二层路由
-            {name:'Home', path:'home',component:Home},
-            {name:'List', path:'list',component:List },
-            {name:'Cart', path:'cart',component:Cart},
-            {name:'Mine', path:'mine',component:Mine},
-            {name:'Home', path:'',component:Home}
-            ]}
-    ]
+
+        { name: 'Home', path: '/home', component: Home },
+        { name: 'List', path: '/list', component: List },
+        { name: 'Cart', path: '/cart', component: Cart },
+        { name: 'Mine', path: '/mine', component: Mine },
+        { name: 'Home', path: '/', component: Home }
+        ]}
+
+
+]
 
 
 let router = new VueRouter({
     routes
+
 });
 export default router;
